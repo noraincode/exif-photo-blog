@@ -14,7 +14,7 @@ import { cleanUpAiTextResponse } from '@/photo/ai';
 const redis = HAS_REDIS_STORAGE ? Redis.fromEnv() : undefined;
 
 const RATE_LIMIT_IDENTIFIER = 'openai-image-query';
-const MODEL = 'deepseek-chat';
+const MODEL = 'gpt-5-mini';
 
 const openai = AI_CONTENT_GENERATION_ENABLED
   ? createOpenAI({
